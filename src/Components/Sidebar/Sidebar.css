@@ -2,16 +2,16 @@
   display: inline-flex;
   flex-direction: column;
   background-color: #1e2a38;
-
   height: 100vh;
 }
 
 .profile {
   display: flex;
   flex-direction: row;
-  margin: 5px 0px 20px 0px;
+  margin: 0px 0px 20px 0px;
   border-bottom: solid;
   border-width: 1px;
+  padding-bottom: 8px;
 }
 
 .profile img {

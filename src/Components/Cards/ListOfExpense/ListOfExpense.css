@@ -1,0 +1,39 @@
+.list{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+
+}
+.expense-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  background-color: white;
+  padding: 16px;
+  border-radius: 10px;
+  /* max-width: 400px; */
+  height: fit-content;
+
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.grid-header {
+  font-weight: bold;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-bottom: 2px solid #ccc;
+}
+
+.grid-cell {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.grid-total-label,
+.grid-total-value {
+  font-weight: bold;
+  background-color: #2B3A55;
+  color: white;
+  padding: 12px;
+  border-radius: 4px;
+}
