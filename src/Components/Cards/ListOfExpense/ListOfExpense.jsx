@@ -1,20 +1,17 @@
-import React from 'react'
-import './ListOfExpense.css'
+import React from "react";
+import "./ListOfExpense.css";
 
-
-
-const ListOfExpense = ({expenseList}) => {
-    const total = Object.values(expenseList).reduce((sum, amount) => sum + amount, 0);
-
-  
+const ListOfExpense = ({ expenseList }) => {
+  const total = Object.values(expenseList).reduce(
+    (sum, amount) => sum + amount,
+    0
+  );
 
   return (
-   <div className="expense-grid">
-     
+    <div className="expense-grid">
       <div className="grid-header">Expense Title</div>
       <div className="grid-header">Amount (₹)</div>
 
-     
       {Object.entries(expenseList).map(([title, amount], index) => (
         <React.Fragment key={index}>
           <div className="grid-cell">{title}</div>
@@ -22,11 +19,10 @@ const ListOfExpense = ({expenseList}) => {
         </React.Fragment>
       ))}
 
-     
-      <div className="grid-total-label">Total</div>
-      <div className="grid-total-value">₹{total}</div>
+      <div className="total">Total</div>
+      <div className="total-value">₹{total}</div>
     </div>
-  )
-}
+  );
+};
 
-export default ListOfExpense
+export default ListOfExpense;

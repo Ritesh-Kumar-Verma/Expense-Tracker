@@ -1,9 +1,3 @@
-.list{
-    background-color: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-
-}
 .expense-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -29,8 +23,8 @@
   border-bottom: 1px solid #eee;
 }
 
-.grid-total-label,
-.grid-total-value {
+.total,
+.total-value {
   font-weight: bold;
   background-color: #2B3A55;
   color: white;
