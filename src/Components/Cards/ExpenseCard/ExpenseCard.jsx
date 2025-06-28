@@ -26,7 +26,7 @@ const ExpenseCard = ({expenseList,addExpense}) => {
         
         <input type="text" ref={inputTitleRef} placeholder='Enter Title'/>
         <input type="text" ref={inputAmountRef} placeholder='Enter Amount'/>
-        <button onClick={()=>{addExpenseToList(inputTitleRef , inputAmountRef);console.log(expenseList)}}>Add</button>
+        <button onClick={()=>{addExpenseToList(inputTitleRef , inputAmountRef);}}>Add</button>
         
     </div>
   )

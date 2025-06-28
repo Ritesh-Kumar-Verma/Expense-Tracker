@@ -6,9 +6,7 @@ import { useState } from "react";
 
 const Main = () => {
   const [expenseList, addExpense] = useState([
-    { title: "Vegetables", amount: 240 },
-    { title: "Petrol", amount: 100 },
-    { title: "Egg Roll", amount: 40 },
+    
   ]);
 
   return (
