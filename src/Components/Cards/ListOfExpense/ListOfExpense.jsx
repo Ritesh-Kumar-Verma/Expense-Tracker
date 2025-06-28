@@ -2,20 +2,17 @@ import React from "react";
 import "./ListOfExpense.css";
 
 const ListOfExpense = ({ expenseList }) => {
-  const total = Object.values(expenseList).reduce(
-    (sum, amount) => sum + amount,
-    0
-  );
+  const total = expenseList.reduce((sum, item) => sum + item.amount, 0);
 
   return (
     <div className="expense-grid">
       <div className="grid-header">Expense Title</div>
       <div className="grid-header">Amount (₹)</div>
 
-      {Object.entries(expenseList).map(([title, amount], index) => (
+      {expenseList.map((data, index) => (
         <React.Fragment key={index}>
-          <div className="grid-cell">{title}</div>
-          <div className="grid-cell">₹{amount}</div>
+          <div className="grid-cell">{data.title}</div>
+          <div className="grid-cell">₹{data.amount}</div>
         </React.Fragment>
       ))}
 
