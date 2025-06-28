@@ -2,6 +2,7 @@ import React from 'react'
 import './Main.css'
 import ExpenseCard from '../Cards/ExpenseCard/ExpenseCard'
 import ListOfExpense from '../Cards/ListOfExpense/ListOfExpense'
+import TimeCard from '../Cards/TimelyExpense/TimeCard';
 
 let expenseList = {
   "Vegetables" : 240,
@@ -20,8 +21,9 @@ const Main = () => {
         <div className="main">
 
           
-          <ExpenseCard/>
+          <ExpenseCard expenseList={expenseList}/>
           <ListOfExpense expenseList = {expenseList}/>
+          <TimeCard/>
 
         </div>
 
