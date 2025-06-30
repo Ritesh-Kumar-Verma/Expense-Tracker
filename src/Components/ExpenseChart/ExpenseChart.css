@@ -1,0 +1,18 @@
+.chart-container {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  min-width: 400px;
+  max-width:  700px;
+}
+
+.chart-title {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #1e2a38; /* same as your sidebar text */
+  text-align: center;
+  font-weight: 600;
+}
