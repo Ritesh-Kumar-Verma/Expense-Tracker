@@ -2,19 +2,9 @@ import "./Home.css";
 import ExpenseCard from "../Cards/ExpenseCard/ExpenseCard";
 import ListOfExpense from "../Cards/ListOfExpense/ListOfExpense";
 import TimeCard from "../Cards/TimelyExpense/TimeCard";
-import { useEffect, useState } from "react";
 import ExpenseChart from "../ExpenseChart/ExpenseChart";
 
-const Home = () => {
-  const [expenseList, addExpense] = useState([]);
-
-  useEffect(()=>{
-    const storedList = localStorage.getItem("expenseList");
-    if(storedList){
-      addExpense(JSON.parse(storedList));
-    }
-  },[]);
-
+const Home = ({expenseList,addExpense}) => {
   
   return (
     <div className="main-and-header">
@@ -25,7 +15,7 @@ const Home = () => {
         <div className="left">
 
         <ExpenseCard expenseList={expenseList} addExpense = {addExpense} />
-        <TimeCard />
+        {/* <TimeCard /> */}
         </div>
         <div className="mid">
         <ListOfExpense expenseList={expenseList} />
@@ -34,8 +24,6 @@ const Home = () => {
           <ExpenseChart expenses={expenseList} />
         </div>
 
-        
-        
       </div>
     </div>
   );

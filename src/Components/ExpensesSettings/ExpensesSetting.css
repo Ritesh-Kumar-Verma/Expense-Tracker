@@ -1,0 +1,42 @@
+.header {
+  background-color: #1e2a38;
+  width: 100vw;
+  height: 59px;
+  border-bottom: solid;
+  border-width: 1px;
+}
+
+.item-table{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  background-color: white;
+  padding: 16px;
+  border-radius: 10px;
+  /* max-width: 400px; */
+  height: fit-content;
+
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+
+.grid-header {
+  font-weight: bold;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-bottom: 2px solid #ccc;
+}
+.grid-cell {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+
+.delete-button{
+  background-color: rgb(211, 38, 38);
+  border: none;
+}
+
+.delete-button:hover{
+  cursor: pointer;
+}
