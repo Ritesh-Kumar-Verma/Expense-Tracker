@@ -1,6 +1,5 @@
 import Sidebar from './Components/Sidebar/Sidebar'
 import Home from './Components/Home/Home'
-import Trial from './Trial/Trial'
 import ExpensesSetting from './Components/ExpensesSettings/ExpensesSetting'
 import { useEffect, useState } from "react";
 

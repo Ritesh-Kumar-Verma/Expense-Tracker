@@ -1,7 +1,6 @@
 import "./Home.css";
 import ExpenseCard from "../Cards/ExpenseCard/ExpenseCard";
 import ListOfExpense from "../Cards/ListOfExpense/ListOfExpense";
-import TimeCard from "../Cards/TimelyExpense/TimeCard";
 import ExpenseChart from "../ExpenseChart/ExpenseChart";
 import OverallExpense from "../OverallExpense/OverallExpense";
 
