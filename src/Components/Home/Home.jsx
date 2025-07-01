@@ -3,6 +3,7 @@ import ExpenseCard from "../Cards/ExpenseCard/ExpenseCard";
 import ListOfExpense from "../Cards/ListOfExpense/ListOfExpense";
 import TimeCard from "../Cards/TimelyExpense/TimeCard";
 import ExpenseChart from "../ExpenseChart/ExpenseChart";
+import OverallExpense from "../OverallExpense/OverallExpense";
 
 const Home = ({expenseList,addExpense}) => {
   
@@ -15,12 +16,16 @@ const Home = ({expenseList,addExpense}) => {
         <div className="left">
 
         <ExpenseCard expenseList={expenseList} addExpense = {addExpense} />
+        <OverallExpense expenseList={expenseList}/>
         {/* <TimeCard /> */}
         </div>
         <div className="mid">
         <ListOfExpense expenseList={expenseList} />
         </div>
         <div className="right">
+          
+          
+          
           <ExpenseChart expenses={expenseList} />
         </div>
 
