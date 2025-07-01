@@ -17,7 +17,6 @@ const Home = ({expenseList,addExpense}) => {
 
         <ExpenseCard expenseList={expenseList} addExpense = {addExpense} />
         <OverallExpense expenseList={expenseList}/>
-        {/* <TimeCard /> */}
         </div>
         <div className="mid">
         <ListOfExpense expenseList={expenseList} />
