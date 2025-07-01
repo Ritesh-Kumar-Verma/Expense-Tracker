@@ -36,22 +36,7 @@ Vite	Lightning-fast development build tool
 CSS / SCSS	Styling and layout
 Chart.js / Recharts	Graphing library (optional)
 
-📂 Folder Structure (Simplified)
-css
-Copy
-Edit
-src/
-├── components/
-│   ├── Cards/
-│   │   ├── ExpenseCard/
-│   │   ├── ListOfExpense/
-│   │   └── TimelyExpense/
-│   ├── ExpenseChart/
-│   └── OverallExpense/
-├── pages/
-│   └── Home.jsx
-├── App.jsx
-└── main.jsx
+
 🧑‍💻 Getting Started
 1. Clone the repo
 bash
