@@ -25,18 +25,16 @@
   min-width: 100px;
 }
 .right {
-/*   
-  height: 100vh;
-  width: 100vw; */
+
+  
   min-width: 100px;
-  margin-right: 145px;
   background-color: #e3eaf2;
 }
 
 .main-header {
   background-color: #1e2a38;
   width: 100vw;
-  height: 69px;
+  height: 59px;
   border-bottom: solid;
   border-width: 1px;
 }
