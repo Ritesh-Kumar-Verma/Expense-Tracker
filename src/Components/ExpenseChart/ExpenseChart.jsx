@@ -22,7 +22,8 @@ const ExpenseChart = ({ expenses }) => {
         data: expenses.map(item => item.amount),
         backgroundColor: 'rgba(30, 42, 56, 0.7)', // Matches your sidebar color
         borderColor: 'rgba(30, 42, 56, 1)',
-        borderWidth: 1
+        borderWidth: 1,
+        barThickness: 30,
       }
     ]
   };
@@ -33,6 +34,7 @@ const ExpenseChart = ({ expenses }) => {
       legend: {
         labels: {
           color: '#1e2a38'
+          
         }
       }
     },
