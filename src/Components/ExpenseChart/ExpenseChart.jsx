@@ -1,7 +1,6 @@
-// components/ExpenseChart.jsx
 import React from 'react';
 import { Bar } from 'react-chartjs-2';
-import './ExpenseChart.css'; // Make sure this file exists
+import './ExpenseChart.css';
 import {
   Chart as ChartJS,
   BarElement,
@@ -20,7 +19,7 @@ const ExpenseChart = ({ expenses }) => {
       {
         label: 'Expense Amount (₹)',
         data: expenses.map(item => item.amount),
-        backgroundColor: 'rgba(30, 42, 56, 0.7)', // Matches your sidebar color
+        backgroundColor: 'rgba(30, 42, 56, 0.7)',
         borderColor: 'rgba(30, 42, 56, 1)',
         borderWidth: 1,
         barThickness: 30,
