@@ -40,7 +40,9 @@
 
 
 @media(max-width:1000px){
-  
+  .main-header{
+    height: 69px;
+  }
   .main{
     grid-template-columns: 1fr;
   }

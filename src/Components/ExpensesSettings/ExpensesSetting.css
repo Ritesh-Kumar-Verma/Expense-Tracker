@@ -1,7 +1,10 @@
+.expenses-setting{
+  
+}
 .header {
   background-color: #1e2a38;
   width: 100vw;
-  height: 59px;
+  height: 69px;
   border-bottom: solid;
   border-width: 1px;
 }
@@ -13,28 +16,34 @@
   background-color: white;
   padding: 16px;
   border-radius: 10px;
-  /* max-width: 400px; */
+  width: 380px;
   height: fit-content;
 
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin-right: 10px;
 }
-
 
 .grid-header {
   font-weight: bold;
   background-color: #f0f0f0;
   padding: 10px;
+  max-width: 100px;
   border-bottom: 2px solid #ccc;
 }
 .grid-cell {
   padding: 10px;
   border-bottom: 1px solid #eee;
+  max-width: 100px;
+  word-wrap: break-word;
 }
 
 
 .delete-button{
   background-color: rgb(211, 38, 38);
   border: none;
+  max-width: 100px;
+  height: 41px;
+  
 }
 
 .delete-button:hover{

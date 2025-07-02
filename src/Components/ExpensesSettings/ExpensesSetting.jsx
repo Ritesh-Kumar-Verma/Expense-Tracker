@@ -1,17 +1,14 @@
 import React from "react";
 import "./ExpensesSetting.css";
 const ExpensesSetting = ({ expenseList, addExpense }) => {
-  
   const deleteExpenseItem = (index) => {
     const newExpenseList = expenseList.filter((_, i) => i !== index);
     addExpense(newExpenseList);
     localStorage.setItem("expenseList", JSON.stringify(newExpenseList));
   };
 
-
-
   return (
-    <div className="ExpensesSetting">
+    <div className="expenses-setting">
       <div className="header"></div>
       <div className="main">
         <div className="item-table">
@@ -30,7 +27,9 @@ const ExpensesSetting = ({ expenseList, addExpense }) => {
                 <button
                   className="delete-button"
                   key={index}
-                  onClick={()=>{deleteExpenseItem(index)}}
+                  onClick={() => {
+                    deleteExpenseItem(index);
+                  }}
                 >
                   Del
                 </button>

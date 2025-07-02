@@ -21,8 +21,8 @@ const OverallExpense = ({expenseList}) => {
         {
           groupExpense.map((data,index)=>{return <React.Fragment  key="index">
             
-            <div grid-cell>{data.title}</div>
-            <div>{data.amount}</div>
+            <div className="grid-cell">{data.title}</div>
+            <div className="grid-cell">{data.amount}</div>
             
             </React.Fragment>
           })

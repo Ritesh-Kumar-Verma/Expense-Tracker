@@ -21,6 +21,7 @@
 .grid-cell {
   padding: 10px;
   border-bottom: 1px solid #eee;
+  word-wrap:break-word;
 }
 
 .total,

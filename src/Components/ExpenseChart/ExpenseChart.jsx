@@ -23,33 +23,37 @@ const ExpenseChart = ({ expenses }) => {
         borderColor: 'rgba(30, 42, 56, 1)',
         borderWidth: 1,
         barThickness: 30,
+      
       }
     ]
   };
-
-  const chartOptions = {
-    responsive: true,
-    plugins: {
-      legend: {
-        labels: {
-          color: '#1e2a38'
-          
+const chartOptions = {
+  responsive: true,
+  plugins: {
+    legend: {
+      labels: {
+        color: '#1e2a38'
+      }
+    }
+  },
+  scales: {
+    x: {
+      ticks: {
+        color: '#1e2a38',
+        callback: function (value, index, ticks) {
+          const label = this.getLabelForValue(value);
+          return label.match(/.{1,10}/g);
         }
       }
     },
-    scales: {
-      x: {
-        ticks: {
-          color: '#1e2a38'
-        }
-      },
-      y: {
-        ticks: {
-          color: '#1e2a38'
-        }
+    y: {
+      ticks: {
+        color: '#1e2a38'
       }
     }
-  };
+  }
+};
+
 
   return (
     <div className="chart-container">

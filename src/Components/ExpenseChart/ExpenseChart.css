@@ -6,13 +6,13 @@
   padding: 10px;
   width: 100%;
   min-width: 0;
-  box-sizing: border-box; /* include padding */
+  box-sizing: border-box; 
 }
 
 .chart-title {
   font-size: 1.2rem;
   margin-bottom: 15px;
-  color: #1e2a38; /* same as your sidebar text */
+  color: #1e2a38; 
   text-align: center;
   font-weight: 600;
 }
