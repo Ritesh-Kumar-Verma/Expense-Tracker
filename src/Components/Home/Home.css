@@ -4,7 +4,6 @@
 
 .main {
   background-color: #e3eaf2;
-  flex: 1;
   min-width: 0;
   padding: 10px;
   display: grid;
@@ -41,9 +40,7 @@
 
 
 @media(max-width:1000px){
-  .right{
-    margin-right: 0px;
-  }
+  
   .main{
     grid-template-columns: 1fr;
   }
