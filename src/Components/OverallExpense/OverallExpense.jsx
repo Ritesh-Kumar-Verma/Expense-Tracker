@@ -1,35 +1,29 @@
-import React from 'react'
-import './OverallExpense.css'
-const OverallExpense = ({expenseList}) => {
+import React from 'react';
+import './OverallExpense.css';
 
-  const groupExpense = expenseList.map((acc, currentExpense)=>{
-    if(acc[currentExpense.title]){
-      acc[currentExpense.title]+=currentExpense.amount;
-    }
-    else{
-      acc[currentExpense.title] = currentExpense.amount; 
+const OverallExpense = ({ expenseList }) => {
+  const groupExpense = expenseList.reduce((acc, currentExpense) => {
+    if (acc[currentExpense.title]) {
+      acc[currentExpense.title] += currentExpense.amount;
+    } else {
+      acc[currentExpense.title] = currentExpense.amount;
     }
     return acc;
-  },{});
-
+  }, {});
 
   return (
-    <div className='expense-grid'>
-        <div className="grid-header">Expense Title</div>
-        <div className="grid-header">Amount</div>
+    <div className="expense-grid">
+      <div className="grid-header">Expense Title</div>
+      <div className="grid-header">Amount</div>
 
-        {
-          groupExpense.map((data,index)=>{return <React.Fragment  key="index">
-            
-            <div className="grid-cell">{data.title}</div>
-            <div className="grid-cell">{data.amount}</div>
-            
-            </React.Fragment>
-          })
-        }
-
+      {Object.entries(groupExpense).map(([title, amount], index) => (
+        <React.Fragment key={index}>
+          <div className="grid-cell">{title}</div>
+          <div className="grid-cell">{amount}</div>
+        </React.Fragment>
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default OverallExpense
+export default OverallExpense;
