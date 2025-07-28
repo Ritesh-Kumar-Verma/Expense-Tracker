@@ -4,17 +4,13 @@
   background-color: #1e2a38;
   width: 220px;
 }
-@media (max-width:600px){
-  .sidebar{
+@media (max-width: 600px) {
+  .sidebar {
     width: 60px;
   }
-  .menu-item p{
+  .menu-item p {
     display: none;
   }
-  .profile p{
-    display: none;
-  }
-  
 }
 .profile {
   display: flex;
@@ -66,4 +62,8 @@
 .menu-item:hover {
   background-color: #2d3c50;
   cursor: pointer;
+}
+
+.active {
+  background-color: #2d3c50;
 }
