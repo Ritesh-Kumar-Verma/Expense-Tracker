@@ -4,7 +4,18 @@
   background-color: #1e2a38;
   width: 220px;
 }
-
+@media (max-width:600px){
+  .sidebar{
+    width: 60px;
+  }
+  .menu-item p{
+    display: none;
+  }
+  .profile p{
+    display: none;
+  }
+  
+}
 .profile {
   display: flex;
   flex-direction: row;
@@ -12,13 +23,14 @@
   border-bottom: solid;
   border-width: 1px;
   padding-bottom: 8px;
+  justify-content: center;
 }
 
 .profile img {
   width: 40px;
   height: 40px;
   border-radius: 20px;
-  margin: 10px 10px 0px 10px;
+  margin: 10px 10px 0px 0px;
 }
 .profile p {
   color: #f5f7fa;

@@ -36,6 +36,13 @@
   height: 59px;
   border-bottom: solid;
   border-width: 1px;
+  display: flex;
+  
+  align-items: center;
+}
+.main-header p{
+    color: #f5f7fa;
+
 }
 
 
@@ -45,5 +52,11 @@
   }
   .main{
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width:600px) {
+  .main-header{
+    height: 59px;
   }
 }

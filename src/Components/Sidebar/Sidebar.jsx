@@ -7,7 +7,7 @@ const Sidebar = ({tab,openTab}) => {
       <div className="sidebar">
         <div className="profile">
           <img src={assets.boy} alt="" />
-          <p>Expense Tracker</p>
+          {/* <p>Expense Tracker</p> */}
         </div>
 
         <div className="menu">

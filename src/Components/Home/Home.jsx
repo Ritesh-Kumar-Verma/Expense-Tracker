@@ -7,7 +7,9 @@ import OverallExpense from "../OverallExpense/OverallExpense";
 const Home = ({ expenseList, addExpense }) => {
   return (
     <div className="main-and-header">
-      <div className="main-header"></div>
+      <div className="main-header">
+        <p>Expense Tracker</p>
+      </div>
 
       <div className="main">
         <div className="left">
